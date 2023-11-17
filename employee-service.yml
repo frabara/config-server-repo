@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   boot:
-    message: "Holanda"
+    message: "Hola Employee Service Bus"
   datasource:
     url: jdbc:mysql://localhost:3306/employee_db?allowPublicKeyRetrieval=true&useSSL=false
     username: root
