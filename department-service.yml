@@ -1,7 +1,4 @@
 spring:
-  sleuth:
-    traceId128: true
-    supportsJoin: false
   boot:
     message: "Hola Department Service"
   datasource:
