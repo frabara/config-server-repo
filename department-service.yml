@@ -11,7 +11,7 @@ spring:
       ddl-auto: update
     open-in-view: false
   boot:
-    message: Hello from department-service
+    message: Hello from changed
 eureka:
   client:
     serviceUrl:
