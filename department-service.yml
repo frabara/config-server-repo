@@ -10,6 +10,8 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
+  boot:
+    message: Hello from department service
 eureka:
   client:
     serviceUrl:
