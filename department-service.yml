@@ -1,21 +1,20 @@
+server:
+  port: 8080
 spring:
-  boot:
-    message: "Hola Department Service"
+  application:
+    name: DEPARTMENT-SERVICE
   datasource:
-    url: jdbc:mysql://localhost:3306/department_db?allowPublicKeyRetrieval=true&useSSL=false
+    url: 'jdbc:mysql://localhost:3306/department_db'
     username: root
     password: hola
+    driverClassName: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
     open-in-view: false
 eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
   instance:
-    client:
-      serverUrl:
-        defaultZone: http://localhost:8761/eureka/
-# management:
-#  tracing:
-#    sampling:
-#      probability: 1.0
-# logging.pattern.level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+    preferIpAddress: false
